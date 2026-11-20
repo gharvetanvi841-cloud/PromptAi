@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptCraft AI - Smart Prompt Generator</title>
+
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">✨ PromptCraft AI</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#generator">Prompt Generator</a>
+            <a href="#features">Features</a>
+        </div>
+
+        <button class="nav-button">Get Started</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">✨ Your AI Prompt Assistant</span>
+
+            <h1>
+                Turn Simple Ideas Into
+                <span>Powerful AI Prompts</span>
+            </h1>
+
+            <p>
+                Create professional AI prompts in seconds.
+                Just describe your idea and let PromptCraft AI
+                do the magic.
+            </p>
+
+            <a href="#generator" class="hero-button">
+                Create Your Prompt →
+            </a>
+        </div>
+    </section>
+
+    <section class="generator" id="generator">
+
+        <h2>AI Prompt Generator</h2>
+        <p>Describe what you want AI to do.</p>
+
+        <textarea
+            id="userIdea"
+            placeholder="Example: I want to learn Python programming..."
+        ></textarea>
+
+        <div class="form-group">
+            <label for="category">Choose Category</label>
+
+            <select id="category">
+                <option value="Education">Education</option>
+                <option value="Coding">Coding</option>
+                <option value="Business">Business</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Creative Writing">Creative Writing</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="level">Choose Detail Level</label>
+
+            <select id="level">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </div>
+
+        <button id="generateBtn" class="generate-button">
+            ✨ Generate Prompt
+        </button>
+
+        <div class="result-box">
+            <h3>Your Generated Prompt</h3>
+            <div id="result">Your prompt will appear here...</div>
+            <button id="copyBtn">Copy Prompt</button>
+        </div>
+
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose PromptCraft AI?</h2>
+
+        <div class="feature-container">
+            <div class="feature-card">
+                <h3>✨ Smart Generation</h3>
+                <p>Create detailed prompts from simple ideas.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🚀 Easy to Use</h3>
+                <p>Generate professional prompts without prompt engineering knowledge.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📚 Multiple Categories</h3>
+                <p>Create prompts for education, coding and business.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 PromptCraft AI. Built with Python and AI.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
